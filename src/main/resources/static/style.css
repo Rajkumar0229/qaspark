@@ -1033,18 +1033,19 @@ a.contact-item:hover { border-color: rgba(245,130,31,0.4); background: rgba(245,
    ============================ */
 .scroll-top {
   position: fixed;
-  bottom: 28px; right: 28px;
-  width: 46px; height: 46px;
+  bottom: 24px; left: 24px;
+  width: 48px; height: 48px;
   background: linear-gradient(135deg, var(--orange), var(--orange-dk));
   color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   font-size: 1.2rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(245, 130, 31, 0.4);
+  z-index: 1000;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity var(--transition), transform var(--transition), box-shadow var(--transition);
@@ -1324,6 +1325,7 @@ a.contact-item:hover { border-color: rgba(245,130,31,0.4); background: rgba(245,
 
 @media (max-width: 600px) {
   .floating-widget-group { bottom: 16px; right: 16px; }
+  .scroll-top { bottom: 16px; left: 16px; width: 44px; height: 44px; }
   .widget-btn span.widget-label { display: none; }
   .widget-btn { padding: 12px; border-radius: 50%; width: 48px; height: 48px; justify-content: center; }
 }
